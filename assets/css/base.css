@@ -154,10 +154,20 @@ html{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    z-index: 1;
 }
 
 .select-input:hover .select-input__list{
     display: block;
+}
+
+.select-input__list{
+    margin: 6px 0 0;
+}
+
+.select-input__item{
+    padding-top: 4px;
+
 }
 
 .select-input__label{
@@ -195,5 +205,46 @@ html{
 .select-input__link:hover{
     color: var(--primary-color);
 }
+
+/* pagination */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item{
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active:hover .pagination-item__link{
+    opacity: 0.9;
+}
+
+.pagination-item__link{
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+}
+
+.pagination-item--no-hover{
+    cursor: default ;
+}
+
+
 
 
