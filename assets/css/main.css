@@ -726,6 +726,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
 }
 
 .header__cart-item-price{
@@ -958,6 +959,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     text-overflow: ellipsis;
 }
 
@@ -1182,4 +1184,9 @@ i.home-product-item__like-icon-fill{
     margin-top: 8px;
     font-weight: 400;
     justify-content: left;
+}
+
+.go-to-admin-page{
+    text-decoration: none;
+    cursor: pointer;
 }
