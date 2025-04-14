@@ -15,8 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <!-- font icon -->
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
+    
 </head>
 <body>
+    
     <div class="app">
         <header class="header">
             <div class="grid">
@@ -885,25 +887,30 @@
         </footer>
     </div>
 
-    <!-- <div class="modal"> -->
+    <div class="modal">
         <!-- lop phu ben ngoai -->
-        <!-- <div class="modal__overlay"></div>
+        <div class="modal__overlay"></div>
 
-        <div class="modal__body"> -->
+        <div class="modal__body">
             
-            <!-- regiter form -->
-            <!-- <div class="auth-form">
+            <!-- register form -->
+            <div class="auth-form register-form hidden">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                        <div class="auth-form__switch-btn">Đăng nhập</div>
                     </div>
 
                     <div class="auth-form__form">
                         <div class="auth-form__group">
-                            <input type="email" class="auth-form__input" placeholder="Email của bạn">
-                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
-                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            <input type="text" id="register-user-name" class="auth-form__input" placeholder="Tên của bạn">
+                            <span class="error-message"></span>
+                            <input type="email" id="register-user-email" class="auth-form__input" placeholder="Email của bạn">
+                            <span class="error-message"></span>
+                            <input type="password" id="register-user-password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <span class="error-message"></span>
+                            <input type="password" id="register-user-confirm-password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            <span class="error-message"></span>    
                         </div>
                     </div>
 
@@ -918,7 +925,7 @@
 
                     <div class="auth-form__controls">
                         <button class="btn btn-normal mr-8px">TRỞ LẠI</button>
-                        <button class="btn btn-primary">ĐĂNG KÝ</button>
+                        <button class="btn btn-primary register-btn">ĐĂNG KÝ</button>
                     </div>
                 </div>
 
@@ -932,34 +939,34 @@
                         <span class="auth-form__social-title">Kết nối với Google</span>
                     </a>
                 </div>
-            </div> -->
+            </div>
 
             <!-- login form -->
-            <!-- <div class="auth-form">
+            <div class="auth-form login-form ">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng ký</span>
+                        <div class="auth-form__switch-btn">Đăng ký</div>
                     </div>
 
                     <div class="auth-form__form">
                         <div class="auth-form__group">
-                            <input type="email" class="auth-form__input" placeholder="Email của bạn">
-                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <input type="email" id="login-user-email" class="auth-form__input" placeholder="Email của bạn">
+                            <span class="error-message"></span>
+                            <input type="password" id="login-user-password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <span class="error-message"></span>
                         </div>
                     </div>
 
                     <div class="auth-form-aside">
                         <div class="auth-form__help">
                             <a href="" class="auth-form__help-link auth-form__forgot">Quên mật khẩu</a>
-                            <span class="auth-form__separate"></span>
-                            <a href="" class="auth-form__help-link">Cần trợ giúp</a>
                         </div>
                     </div>
 
                     <div class="auth-form__controls">
                         <button class="btn btn-normal mr-8px">TRỞ LẠI</button>
-                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                        <button class="btn btn-primary login-btn">ĐĂNG NHẬP</button>
                     </div>
                 </div>
 
@@ -973,8 +980,46 @@
                         <span class="auth-form__social-title">Kết nối với Google</span>
                     </a>
                 </div>
-            </div> -->
-        <!-- </div>
-    </div> -->
+            </div>
+
+            <!-- forgot password form -->
+            <div class="auth-form forgot-password-form hidden">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đặt lại mật khẩu</h3>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" id="forgot-user-email" class="auth-form__input" placeholder="Email của bạn">
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn-normal mr-8px back-to-login">TRỞ LẠI</button>
+                        <button class="btn btn-primary next-check-email-notification-btn">TIẾP THEO</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- check email notification form -->
+            <div class="auth-form check-email-notification-form hidden">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Kiểm tra email</h3>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <p class="auth-form__notification-text">Chúng tôi đã gửi một email đến địa chỉ của bạn. Vui lòng kiểm tra email và làm theo hướng dẫn để đặt lại mật khẩu.</p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn-primary back-to-login-form">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
