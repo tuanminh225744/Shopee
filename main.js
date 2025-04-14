@@ -53,6 +53,7 @@ document.querySelector(".register-btn").addEventListener("click", function (e) {
     e.preventDefault(); // Ngăn chặn hành vi mặc định của nút
     if (validateFormRegister()) {
         alert("Đăng ký thành công!");
+        // Thực hiện hành động đăng ký ở đây (gửi dữ liệu đến server, v.v.)
     }
 });
 
@@ -92,6 +93,7 @@ document.querySelector(".login-btn").addEventListener("click", function (e) {
     e.preventDefault();
     if (validateFormLogin()) {
         alert("Đăng nhập thành công!");
+        // Thực hiện hành động đăng nhập ở đây (gửi dữ liệu đến server, v.v.)
     }
 });
 
@@ -181,4 +183,16 @@ checkEmailBtn.addEventListener("click", function (e) {
         forgotForm.classList.add("hidden");
         checkEmailFrom.classList.remove("hidden");
     }
+});
+
+
+// Gán sự kiện cho nút "TRỞ LẠI"
+// Trở về main 
+const returnMainBtns = document.querySelectorAll(".return-main-btn");
+const modalForm = document.querySelector(".modal");
+returnMainBtns.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        modalForm.classList.add("hidden");
+    });
 });
