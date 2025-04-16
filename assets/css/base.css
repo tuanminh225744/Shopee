@@ -252,4 +252,8 @@ html{
     display: none;
 }
 
+.hidden-important{
+    display: none !important;
+}
+
 
