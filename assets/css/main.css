@@ -4,7 +4,7 @@
 }
 
 .admin-page .header{
-    min-height: 50px;
+    min-height: var(--header-admin-height);
     background-image: linear-gradient(0,#fe6433,#f53e2d);
 }
 
@@ -15,7 +15,7 @@
 }
 
 .admin-page .navbar{
-    height: 50px;
+    height: var(--header-admin-height);
     align-items: center;
 }
 
@@ -803,7 +803,7 @@
 }
 
 .admin-page .app__container{
-    min-height: 590px;
+    min-height: calc(100vh - var(--header-admin-height));
 }
 
 .app__content{
@@ -1346,6 +1346,10 @@ i.home-product-item__like-icon-fill{
     min-width: 200px; /* tránh bị quá nhỏ ở màn hẹp */
 }
 
+.admin__stat-card h3{
+    font-size: 1.4rem;
+}
+
 .admin__stat-card ul{
     list-style: none;
     margin-left: 0;
@@ -1358,10 +1362,10 @@ i.home-product-item__like-icon-fill{
     margin-left: 0;
     padding: 0;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
-    font-weight: 500;
-    line-height: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
 }
 
 .admin__stat-value {
@@ -1382,7 +1386,7 @@ i.home-product-item__like-icon-fill{
     width: 100%;
     flex: 1 1 calc(50% - 20px);
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: #fafafa;
     font-size: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
@@ -1409,5 +1413,5 @@ i.home-product-item__like-icon-fill{
 }
 
 .admin__content-table-list tbody tr:hover {
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
 }
