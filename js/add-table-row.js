@@ -155,6 +155,7 @@ document.getElementById("addOrderBtn").addEventListener("click", () => {
         <select id="newOrderStatus" class="auth-form__input">
             <option value="Đang xử lý">Đang xử lý</option>
             <option value="Đã giao">Đã giao</option>
+            <option value="Đã hủy">Đã hủy</option>
         </select>
         <span class="error-message"></span>
     `;
