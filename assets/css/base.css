@@ -104,6 +104,8 @@ html{
     animation: growth linear 0.1s;
 }
 
+
+
 /* button style */
 
 .btn{
@@ -250,11 +252,8 @@ html{
 
 /* hidden */
 .hidden{
-    display: none;
-}
-
-.hidden-important{
     display: none !important;
 }
+
 
 
