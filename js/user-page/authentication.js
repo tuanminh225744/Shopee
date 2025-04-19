@@ -53,6 +53,8 @@ document.querySelector(".register-btn").addEventListener("click", function (e) {
     e.preventDefault(); // Ngăn chặn hành vi mặc định của nút
     if (validateFormRegister()) {
         alert("Đăng ký thành công!");
+        registerForm.classList.add("hidden");
+        loginForm.classList.remove("hidden");
         // Thực hiện hành động đăng ký ở đây (gửi dữ liệu đến server, v.v.)
     }
 });
@@ -92,11 +94,18 @@ function validateFormLogin() {
 document.querySelector(".login-btn").addEventListener("click", function (e) {
     e.preventDefault();
     if (validateFormLogin()) {
-        alert("Đăng nhập thành công!");
+        loginBtn.classList.add("hidden");
+        registerBtn.classList.add("hidden");
+        document.querySelector(".navbar-user").classList.remove("hidden");
+        modalForm.classList.add("hidden");
+        loginForm.classList.add("hidden");
+        registerForm.classList.add("hidden");
         // Thực hiện hành động đăng nhập ở đây (gửi dữ liệu đến server, v.v.)
     }
 });
 
+// Tự động nhấn nút đăng nhập khi trang được tải
+// document.getElementById("login-btn").click();
 
 
 // Chuyển đổi giữa form đăng ký và đăng nhập
@@ -198,3 +207,27 @@ returnMainBtns.forEach(btn => {
 });
 
 
+// Khi ấn "ĐĂNG NHẬP" ở navbar
+const loginBtn = document.querySelector("#navbar__login-btn");
+
+loginBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    modalForm.classList.remove("hidden");
+    loginForm.classList.remove("hidden");
+    registerForm.classList.add("hidden");
+    forgotForm.classList.add("hidden");
+    checkEmailFrom.classList.add("hidden");
+});
+
+
+// Khi ấn "ĐĂNG KÝ" ở navbar
+const registerBtn = document.querySelector("#navbar__register-btn");
+
+registerBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    modalForm.classList.remove("hidden");
+    registerForm.classList.remove("hidden");
+    loginForm.classList.add("hidden");
+    forgotForm.classList.add("hidden");
+    checkEmailFrom.classList.add("hidden");
+});

@@ -118,29 +118,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.querySelector("#addProductBtn").classList.remove("hidden");
                 document.querySelector("#addCustomerBtn").classList.add("hidden");
                 document.querySelector("#addOrderBtn").classList.add("hidden");
-                document.querySelector("#admin__table").classList.remove("hidden-important");
-                document.querySelector("#admin__content-statistics").classList.add("hidden-important"); 
+                document.querySelector("#admin__table").classList.remove("hidden");
+                document.querySelector("#admin__content-statistics").classList.add("hidden"); 
                 contentSearchInput.placeholder= "Tìm kiếm sản phẩm...";
             } else if (selected === "Quản lý khách hàng") {
                 document.querySelector("#addProductBtn").classList.add("hidden");
                 document.querySelector("#addCustomerBtn").classList.remove("hidden");
                 document.querySelector("#addOrderBtn").classList.add("hidden");
-                document.querySelector("#admin__table").classList.remove("hidden-important");
-                document.querySelector("#admin__content-statistics").classList.add("hidden-important");
+                document.querySelector("#admin__table").classList.remove("hidden");
+                document.querySelector("#admin__content-statistics").classList.add("hidden");
                 contentSearchInput.placeholder= "Tìm kiếm khách hàng...";
             } else if (selected === "Quản lý đơn hàng") {
                 document.querySelector("#addProductBtn").classList.add("hidden");
                 document.querySelector("#addCustomerBtn").classList.add("hidden");
                 document.querySelector("#addOrderBtn").classList.remove("hidden");
-                document.querySelector("#admin__table").classList.remove("hidden-important");
-                document.querySelector("#admin__content-statistics").classList.add("hidden-important");
+                document.querySelector("#admin__table").classList.remove("hidden");
+                document.querySelector("#admin__content-statistics").classList.add("hidden");
                 contentSearchInput.placeholder= "Tìm kiếm đơn hàng...";
             }else {
                 document.querySelector("#addProductBtn").classList.add("hidden");
                 document.querySelector("#addCustomerBtn").classList.add("hidden");
                 document.querySelector("#addOrderBtn").classList.add("hidden");
-                document.querySelector("#admin__table").classList.add("hidden-important");
-                document.querySelector("#admin__content-statistics").classList.remove("hidden-important");
+                document.querySelector("#admin__table").classList.add("hidden");
+                document.querySelector("#admin__content-statistics").classList.remove("hidden");
                 contentSearchInput.placeholder= "Tìm kiếm...";
             }
         });
