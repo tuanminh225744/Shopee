@@ -44,12 +44,12 @@ function handleChangeEmail() {
         <span class="error-message"></span>
     </div>
     <div class="form-group form-group--button">
-        <button id="changeEmailBtn" class="btn btn-primary">Đổi email</button>
+        <button id="saveChangeEmailBtn" class="btn btn-primary">Đổi email</button>
     </div>
     `;
 
-    const changeEmailBtn = document.querySelector('#changeEmailBtn');
-    changeEmailBtn.onclick = () => {
+    const saveChangeEmailBtn = document.querySelector('#saveChangeEmailBtn');
+    saveChangeEmailBtn.onclick = () => {
         if (validateEmailForm()) {
             const newEmail = document.querySelector('#newEmail').value.trim();
             console.log('Đổi email thành công:', newEmail);

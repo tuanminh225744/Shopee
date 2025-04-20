@@ -44,16 +44,17 @@ function handleChangePhoneNumber() {
         <span class="error-message"></span>
     </div>
     <div class="form-group form-group--button">
-        <button id="changePhoneBtn" class="btn btn-primary">Đổi số điện thoại</button>
+        <button id="saveChangePhoneBtn" class="btn btn-primary">Đổi số điện thoại</button>
     </div>
     `;
 
-    const changePhoneBtn = document.querySelector('#changePhoneBtn');
-    changePhoneBtn.onclick = () => {
+    const saveChangePhoneBtn = document.querySelector('#saveChangePhoneBtn');
+    saveChangePhoneBtn.onclick = () => {
         if (validatePhoneForm()) {
             const newPhone = document.querySelector('#newPhone').value.trim();
             console.log('Đổi số điện thoại thành công:', newPhone);
             alert('Đổi số điện thoại thành công!');
+            
         } else {
             alert('Vui lòng kiểm tra lại thông tin nhập vào!');
         }
