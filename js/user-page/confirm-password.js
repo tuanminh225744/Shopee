@@ -1,6 +1,6 @@
-import * as changePassword from './change-password.js';
 import * as changeEmail from './change-email.js';
 import * as changePhoneNumber from './change-phone-number.js';
+import * as changePassword from './change-password.js';
 
 const modal = document.querySelector('.modal');
 const passwordConfirmForm = document.querySelector('#passwordConfirmForm');
@@ -28,6 +28,8 @@ function openCheckPasswordForm() {
     confirmBtn.onclick = () => {
         const passwordInput = passwordConfirm.value.trim();
         if (passwordInput) {
+            // Xử lý xác nhận mật khẩu ở đây
+            passwordConfirm.nextElementSibling.innerText = "";
             console.log('Mật khẩu xác nhận:', passwordInput);
             modal.classList.add('hidden');
             passwordConfirmForm.classList.add('hidden');
@@ -37,7 +39,7 @@ function openCheckPasswordForm() {
             else if (typeOfChange === 'phone') {
                 changePhoneNumber.handleChangePhoneNumber(); // Hiển thị giao diện đổi số điện thoại
             } else if (typeOfChange === 'password') {
-                changePassword.handleChangePassword(); // Hiển thị giao diện đổi mật khẩu
+                changePassword.handleChangePassword(); // Sử dụng trực tiếp từ window.changePassword
             }
         } else {
             passwordConfirm.nextElementSibling.innerText = "Mật khẩu không được để trống";
@@ -68,3 +70,7 @@ changePasswordBtn.addEventListener('click', function() {
     openCheckPasswordForm();
     typeOfChange = 'password'; // Đặt biến toàn cục để xác định loại thay đổi
 });
+
+export {
+    openCheckPasswordForm
+};
