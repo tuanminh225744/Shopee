@@ -807,6 +807,11 @@
     min-height: calc(100vh - var(--header-admin-height));
 }
 
+.user-page .app__container {
+    min-height: calc(100vh - var(--header-height));
+}
+
+
 .app__content {
     padding-top: 36px;
 }
@@ -1749,7 +1754,7 @@ i.home-product-item__like-icon-fill {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
 .order-card__variant {
     font-size: 1.2rem;
@@ -1761,8 +1766,8 @@ i.home-product-item__like-icon-fill {
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: bold;
-    
-  }
+
+}
 
 .order-card__price--original {
     text-decoration: line-through;
@@ -1812,3 +1817,112 @@ i.home-product-item__like-icon-fill {
     border: 1px solid #ccc;
 }
 
+/* giỏ hàng */
+
+.cart {
+    /* border: 1px solid #ddd; */
+    /* padding: 16px; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+    /* padding-bottom: 80px; */
+    min-height: calc(100vh - var(--header-height));
+}
+
+.cart__header{
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.cart__header,
+.cart__item,
+.cart__footer {
+    background-color: var(--white-color);
+    display: grid;
+    grid-template-columns: 40px 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart__group {
+    margin-top: 10px;
+}
+
+.cart__store{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: var(--white-color);
+    height: 40px;
+    border-bottom: 1px solid #eee;
+    gap: 26px;
+}
+
+.cart__store-label {
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    margin-right: 4px;
+    border-radius: 3px;
+}
+
+.cart__product {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart__image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.cart__title {
+    font-weight: bold;
+}
+
+.cart__price-old {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+}
+
+.cart__btn {
+    padding: 4px 8px;
+}
+
+.cart__input {
+    width: 40px;
+    text-align: center;
+}
+
+.cart__footer {
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+    margin-top: 20px;
+  }
+
+.cart__checkout {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart__total-price {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+}

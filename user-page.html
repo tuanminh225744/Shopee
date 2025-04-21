@@ -133,9 +133,11 @@
                             <img src="./assets/img/anh_user/user.jpg" alt="" class="navbar-user-img">
                             <span class="navbar-user-name">Shiina Mahiru</span>
                             <ul class="navbar-user-menu">
-                                <li class="navbar-user-item navbar-user-item--user-profile-btn"><a href="#">Tài khoản của tôi</a></li>
+                                <li class="navbar-user-item navbar-user-item--user-profile-btn"><a href="#">Tài khoản
+                                        của tôi</a></li>
                                 <li class="navbar-user-item navbar-user-item--order-btn"><a href="#">Đơn mua</a></li>
-                                <li class="navbar-user-item navbar-user-item--logout-btn navbar-user-item--separate "><a href="#">Đăng xuất</a></li>
+                                <li class="navbar-user-item navbar-user-item--logout-btn navbar-user-item--separate "><a
+                                        href="#">Đăng xuất</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -353,7 +355,7 @@
 
         <div class="app__container">
             <div class="grid">
-                <div class="grid__row app__content">
+                <div class="grid__row app__content hidden">
                     <div class="grid__column-2 category">
                         <nav class="category">
                             <h3 class="category-heading">
@@ -912,13 +914,20 @@
 
 
                         <div class="order-tabs">
-                            <div class="order-tabs__item order-tabs__item--active" data-status="TAT_CA">Tất cả<span class="order-tabs__count"></span></div>
-                            <div class="order-tabs__item" data-status="CHO_THANH_TOAN">Chờ thanh toán<span class="order-tabs__count"></span></div>
-                            <div class="order-tabs__item" data-status="VAN_CHUYEN">Vận chuyển<span class="order-tabs__count"></span></div>
-                            <div class="order-tabs__item" data-status="CHO_GIAO_HANG">Chờ giao hàng <span class="order-tabs__count"></span></div>
-                            <div class="order-tabs__item" data-status="HOAN_THANH">Hoàn thành<span class="order-tabs__count"></span></div>
-                            <div class="order-tabs__item" data-status="DA_HUY">Đã hủy<span class="order-tabs__count"></span></div>
-                            <div class="order-tabs__item" data-status="TRA_HANG_HOAN_TIEN">Trả hàng/Hoàn tiền<span class="order-tabs__count"></span></div>
+                            <div class="order-tabs__item order-tabs__item--active" data-status="TAT_CA">Tất cả<span
+                                    class="order-tabs__count"></span></div>
+                            <div class="order-tabs__item" data-status="CHO_THANH_TOAN">Chờ thanh toán<span
+                                    class="order-tabs__count"></span></div>
+                            <div class="order-tabs__item" data-status="VAN_CHUYEN">Vận chuyển<span
+                                    class="order-tabs__count"></span></div>
+                            <div class="order-tabs__item" data-status="CHO_GIAO_HANG">Chờ giao hàng <span
+                                    class="order-tabs__count"></span></div>
+                            <div class="order-tabs__item" data-status="HOAN_THANH">Hoàn thành<span
+                                    class="order-tabs__count"></span></div>
+                            <div class="order-tabs__item" data-status="DA_HUY">Đã hủy<span
+                                    class="order-tabs__count"></span></div>
+                            <div class="order-tabs__item" data-status="TRA_HANG_HOAN_TIEN">Trả hàng/Hoàn tiền<span
+                                    class="order-tabs__count"></span></div>
                         </div>
 
 
@@ -1186,266 +1195,521 @@
                             </div>
                         </div>
 
-                    
-                        
+
+
                     </div>
                 </div>
 
-                <footer class="footer">
-                    <div class="grid">
-                        <div class="grid__row">
-                            <div class="grid__column-2-4">
-                                <h3 class="footer-heading">Chăm sóc khách hàng</h3>
-                                <ul class="footer-list">
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item__link">Shopee mall</a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="grid__column-2-4">
-                                <h3 class="footer-heading">Giới thiệu</h3>
-                                <ul class="footer-list">
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item__link">Giới thiệu</a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item__link">Tuyển dụng</a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="" class="footer-item__link">Điều khoản</a>
-                                    </li>
-                                </ul>
-                            </div>
+                <div class="grid__row cart ">
+                    <div class="cart__header">
+                        <div class="cart__checkbox"><input type="checkbox" /></div>
+                        <div class="cart__column">Sản Phẩm</div>
+                        <div class="cart__column">Đơn Giá</div>
+                        <div class="cart__column">Số Lượng</div>
+                        <div class="cart__column">Số Tiền</div>
+                        <div class="cart__column">Thao Tác</div>
+                    </div>
 
-                            <div class="grid__column-2-4">
-                            </div>
-
-                            <div class="grid__column-2-4">
-                                <h3 class="footer-heading">Theo dõi chúng tôi</h3>
-                                <ul class="footer-list">
-                                    <li class="footer-item">
-                                        <a href="" class=" footer-item__link">
-                                            <i class="footer-item-icon fa-brands fa-facebook"></i>
-                                            Facebook
-                                        </a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="" class=" footer-item__link">
-                                            <i class="footer-item-icon fa-brands fa-instagram"></i>
-                                            Intargram
-                                        </a>
-                                    </li>
-                                    <li class="footer-item">
-                                        <a href="" class=" footer-item__link">
-                                            <i class="footer-item-icon fa-brands fa-linkedin"></i>
-                                            Linkedin
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="grid__column-2-4">
-                                <h3 class="footer-heading">Vào cửa hàng trên ứng dụng</h3>
-                                <div class="footer__download">
-                                    <img src="./assets/img/anh-tai-app/anhQR.png" alt="" class="footer__download-qr">
-                                    <div class="footer__download-apps">
-                                        <a href="" class="footer__download-app-link">
-                                            <img src="./assets/img/anh-tai-app/google-play.png" alt=""
-                                                class="footer__download-app-img">
-                                        </a>
-                                        <a href="" class="footer__download-app-link">
-                                            <img src="./assets/img/anh-tai-app/anh-app-store.png" alt=""
-                                                class="footer__download-app-img">
-                                        </a>
-                                    </div>
+                    <div class="cart__group">
+                        <div class="cart__store">
+                            <input type="checkbox" />
+                            <span class="cart__store-label">Mall</span>
+                            <span class="cart__store-name">TORANO Official Store</span>
+                        </div>
+    
+                        <div class="cart__item">
+                            <div class="cart__checkbox"><input type="checkbox" /></div>
+                            <div class="cart__product">
+                                <img class="cart__image" src="./assets/img/anh-san-pham/san-pham-1.jpg" alt="Áo khoác" />
+                                <div class="cart__details">
+                                    <div class="cart__title">Áo Khoác Gió Nam 2 lớp TORA NO Công Nghệ Cao Cấp...</div>
+                                    <div class="cart__variant">Phân Loại Hàng: XÁM NHẠT, XXL</div>
                                 </div>
+                            </div>
+                            <div class="cart__price">
+                                <span class="cart__price-old">₫600.000</span>
+                                <span class="cart__price-current">₫379.000</span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__btn">-</button>
+                                <input class="cart__input" type="text" value="1" />
+                                <button class="cart__btn">+</button>
+                            </div>
+                            <div class="cart__total">₫379.000</div>
+                            <div class="cart__action">
+                                <a href="#">Xóa</a>
                             </div>
                         </div>
                     </div>
 
-                </footer>
+                    <div class="cart__group">
+                        <div class="cart__store">
+                            <input type="checkbox" />
+                            <span class="cart__store-label">Mall</span>
+                            <span class="cart__store-name">TORANO Official Store</span>
+                        </div>
+    
+                        <div class="cart__item">
+                            <div class="cart__checkbox"><input type="checkbox" /></div>
+                            <div class="cart__product">
+                                <img class="cart__image" src="./assets/img/anh-san-pham/san-pham-1.jpg" alt="Áo khoác" />
+                                <div class="cart__details">
+                                    <div class="cart__title">Áo Khoác Gió Nam 2 lớp TORA NO Công Nghệ Cao Cấp...</div>
+                                    <div class="cart__variant">Phân Loại Hàng: XÁM NHẠT, XXL</div>
+                                </div>
+                            </div>
+                            <div class="cart__price">
+                                <span class="cart__price-old">₫600.000</span>
+                                <span class="cart__price-current">₫379.000</span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__btn">-</button>
+                                <input class="cart__input" type="text" value="1" />
+                                <button class="cart__btn">+</button>
+                            </div>
+                            <div class="cart__total">₫379.000</div>
+                            <div class="cart__action">
+                                <a href="#">Xóa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__group">
+                        <div class="cart__store">
+                            <input type="checkbox" />
+                            <span class="cart__store-label">Mall</span>
+                            <span class="cart__store-name">TORANO Official Store</span>
+                        </div>
+    
+                        <div class="cart__item">
+                            <div class="cart__checkbox"><input type="checkbox" /></div>
+                            <div class="cart__product">
+                                <img class="cart__image" src="./assets/img/anh-san-pham/san-pham-1.jpg" alt="Áo khoác" />
+                                <div class="cart__details">
+                                    <div class="cart__title">Áo Khoác Gió Nam 2 lớp TORA NO Công Nghệ Cao Cấp...</div>
+                                    <div class="cart__variant">Phân Loại Hàng: XÁM NHẠT, XXL</div>
+                                </div>
+                            </div>
+                            <div class="cart__price">
+                                <span class="cart__price-old">₫600.000</span>
+                                <span class="cart__price-current">₫379.000</span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__btn">-</button>
+                                <input class="cart__input" type="text" value="1" />
+                                <button class="cart__btn">+</button>
+                            </div>
+                            <div class="cart__total">₫379.000</div>
+                            <div class="cart__action">
+                                <a href="#">Xóa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__group">
+                        <div class="cart__store">
+                            <input type="checkbox" />
+                            <span class="cart__store-label">Mall</span>
+                            <span class="cart__store-name">TORANO Official Store</span>
+                        </div>
+    
+                        <div class="cart__item">
+                            <div class="cart__checkbox"><input type="checkbox" /></div>
+                            <div class="cart__product">
+                                <img class="cart__image" src="./assets/img/anh-san-pham/san-pham-1.jpg" alt="Áo khoác" />
+                                <div class="cart__details">
+                                    <div class="cart__title">Áo Khoác Gió Nam 2 lớp TORA NO Công Nghệ Cao Cấp...</div>
+                                    <div class="cart__variant">Phân Loại Hàng: XÁM NHẠT, XXL</div>
+                                </div>
+                            </div>
+                            <div class="cart__price">
+                                <span class="cart__price-old">₫600.000</span>
+                                <span class="cart__price-current">₫379.000</span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__btn">-</button>
+                                <input class="cart__input" type="text" value="1" />
+                                <button class="cart__btn">+</button>
+                            </div>
+                            <div class="cart__total">₫379.000</div>
+                            <div class="cart__action">
+                                <a href="#">Xóa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__group">
+                        <div class="cart__store">
+                            <input type="checkbox" />
+                            <span class="cart__store-label">Mall</span>
+                            <span class="cart__store-name">TORANO Official Store</span>
+                        </div>
+    
+                        <div class="cart__item">
+                            <div class="cart__checkbox"><input type="checkbox" /></div>
+                            <div class="cart__product">
+                                <img class="cart__image" src="./assets/img/anh-san-pham/san-pham-1.jpg" alt="Áo khoác" />
+                                <div class="cart__details">
+                                    <div class="cart__title">Áo Khoác Gió Nam 2 lớp TORA NO Công Nghệ Cao Cấp...</div>
+                                    <div class="cart__variant">Phân Loại Hàng: XÁM NHẠT, XXL</div>
+                                </div>
+                            </div>
+                            <div class="cart__price">
+                                <span class="cart__price-old">₫600.000</span>
+                                <span class="cart__price-current">₫379.000</span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__btn">-</button>
+                                <input class="cart__input" type="text" value="1" />
+                                <button class="cart__btn">+</button>
+                            </div>
+                            <div class="cart__total">₫379.000</div>
+                            <div class="cart__action">
+                                <a href="#">Xóa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__group">
+                        <div class="cart__store">
+                            <input type="checkbox" />
+                            <span class="cart__store-label">Mall</span>
+                            <span class="cart__store-name">TORANO Official Store</span>
+                        </div>
+    
+                        <div class="cart__item">
+                            <div class="cart__checkbox"><input type="checkbox" /></div>
+                            <div class="cart__product">
+                                <img class="cart__image" src="./assets/img/anh-san-pham/san-pham-1.jpg" alt="Áo khoác" />
+                                <div class="cart__details">
+                                    <div class="cart__title">Áo Khoác Gió Nam 2 lớp TORA NO Công Nghệ Cao Cấp...</div>
+                                    <div class="cart__variant">Phân Loại Hàng: XÁM NHẠT, XXL</div>
+                                </div>
+                            </div>
+                            <div class="cart__price">
+                                <span class="cart__price-old">₫600.000</span>
+                                <span class="cart__price-current">₫379.000</span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__btn">-</button>
+                                <input class="cart__input" type="text" value="1" />
+                                <button class="cart__btn">+</button>
+                            </div>
+                            <div class="cart__total">₫379.000</div>
+                            <div class="cart__action">
+                                <a href="#">Xóa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__group">
+                        <div class="cart__store">
+                            <input type="checkbox" />
+                            <span class="cart__store-label">Mall</span>
+                            <span class="cart__store-name">TORANO Official Store</span>
+                        </div>
+    
+                        <div class="cart__item">
+                            <div class="cart__checkbox"><input type="checkbox" /></div>
+                            <div class="cart__product">
+                                <img class="cart__image" src="./assets/img/anh-san-pham/san-pham-1.jpg" alt="Áo khoác" />
+                                <div class="cart__details">
+                                    <div class="cart__title">Áo Khoác Gió Nam 2 lớp TORA NO Công Nghệ Cao Cấp...</div>
+                                    <div class="cart__variant">Phân Loại Hàng: XÁM NHẠT, XXL</div>
+                                </div>
+                            </div>
+                            <div class="cart__price">
+                                <span class="cart__price-old">₫600.000</span>
+                                <span class="cart__price-current">₫379.000</span>
+                            </div>
+                            <div class="cart__quantity">
+                                <button class="cart__btn">-</button>
+                                <input class="cart__input" type="text" value="1" />
+                                <button class="cart__btn">+</button>
+                            </div>
+                            <div class="cart__total">₫379.000</div>
+                            <div class="cart__action">
+                                <a href="#">Xóa</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="cart__footer">
+                        <div class="cart__select-all">
+                            <input type="checkbox" /> Chọn Tất Cả (2)
+                        </div>
+                        <a href="#" class="cart__delete">Xóa</a>
+                        <a href="#" class="cart__save">Lưu vào mục Đã thích</a>
+                        <div class="cart__summary">
+                            Tổng cộng (0 Sản phẩm): <span class="cart__total-price">₫0</span>
+                        </div>
+                        <button class="cart__checkout">Mua Hàng</button>
+                    </div>
+                </div>
+
+                
             </div>
+        </div>
 
-            <div class="modal hidden">
-                <!-- lop phu ben ngoai -->
-                <div class="modal__overlay"></div>
-
-                <div class="modal__body">
-
-                    <!-- register form -->
-                    <div class="auth-form register-form hidden">
-                        <div class="auth-form__container">
-                            <div class="auth-form__header">
-                                <h3 class="auth-form__heading">Đăng ký</h3>
-                                <div class="auth-form__switch-btn">Đăng nhập</div>
-                            </div>
-
-                            <div class="auth-form__form">
-                                <div class="auth-form__group">
-                                    <input type="text" id="register-user-name" class="auth-form__input"
-                                        placeholder="Tên của bạn">
-                                    <span class="error-message"></span>
-                                    <input type="email" id="register-user-email" class="auth-form__input"
-                                        placeholder="Email của bạn">
-                                    <span class="error-message"></span>
-                                    <input type="password" id="register-user-password" class="auth-form__input"
-                                        placeholder="Mật khẩu của bạn">
-                                    <span class="error-message"></span>
-                                    <input type="password" id="register-user-confirm-password" class="auth-form__input"
-                                        placeholder="Nhập lại mật khẩu">
-                                    <span class="error-message"></span>
-                                </div>
-                            </div>
-
-                            <div class="auth-form-aside">
-                                <p class="auth-form__policy-text">
-                                    Bằng việc đăng kí, bạn đã đồng ý với Shopee về
-                                    <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a>
-                                    và
-                                    <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
-                                </p>
-                            </div>
-
-                            <div class="auth-form__controls">
-                                <button class="btn btn-normal mr-8px return-main-btn">TRỞ LẠI</button>
-                                <button class="btn btn-primary register-btn">ĐĂNG KÝ</button>
-                            </div>
-                        </div>
-
-                        <div class="auth-form__socials">
-                            <a href="" class="auth-form__social-facebook btn btn--size-s btn--with-icon">
-                                <i class="auth-form__social-icon fa-brands fa-facebook"></i>
-                                <span class="auth-form__social-title">Kết nối với Facebook</span>
-                            </a>
-                            <a href="" class="auth-form__social-google btn btn--size-s btn--with-icon">
-                                <i class="auth-form__social-icon fa-brands fa-google"></i>
-                                <span class="auth-form__social-title">Kết nối với Google</span>
-                            </a>
-                        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Shopee mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- login form -->
-                    <div class="auth-form login-form hidden">
-                        <div class="auth-form__container">
-                            <div class="auth-form__header">
-                                <h3 class="auth-form__heading">Đăng nhập</h3>
-                                <div class="auth-form__switch-btn">Đăng ký</div>
-                            </div>
-
-                            <div class="auth-form__form">
-                                <div class="auth-form__group">
-                                    <input type="email" id="login-user-email" class="auth-form__input"
-                                        placeholder="Email của bạn">
-                                    <span class="error-message"></span>
-                                    <input type="password" id="login-user-password" class="auth-form__input"
-                                        placeholder="Mật khẩu của bạn">
-                                    <span class="error-message"></span>
-                                </div>
-                            </div>
-
-                            <div class="auth-form-aside">
-                                <div class="auth-form__help">
-                                    <a href="" class="auth-form__help-link auth-form__forgot">Quên mật khẩu</a>
-                                </div>
-                            </div>
-
-                            <div class="auth-form__controls">
-                                <button class="btn btn-normal mr-8px return-main-btn">TRỞ LẠI</button>
-                                <button class="btn btn-primary login-btn">ĐĂNG NHẬP</button>
-                            </div>
-                        </div>
-
-                        <div class="auth-form__socials">
-                            <a href="" class="auth-form__social-facebook btn btn--size-s btn--with-icon">
-                                <i class="auth-form__social-icon fa-brands fa-facebook"></i>
-                                <span class="auth-form__social-title">Kết nối với Facebook</span>
-                            </a>
-                            <a href="" class="auth-form__social-google btn btn--size-s btn--with-icon">
-                                <i class="auth-form__social-icon fa-brands fa-google"></i>
-                                <span class="auth-form__social-title">Kết nối với Google</span>
-                            </a>
-                        </div>
+                    <div class="grid__column-2-4">
                     </div>
 
-                    <!-- forgot password form -->
-                    <div class="auth-form forgot-password-form hidden">
-                        <div class="auth-form__container">
-                            <div class="auth-form__header">
-                                <h3 class="auth-form__heading">Đặt lại mật khẩu</h3>
-                            </div>
-
-                            <div class="auth-form__form">
-                                <div class="auth-form__group">
-                                    <input type="email" id="forgot-user-email" class="auth-form__input"
-                                        placeholder="Email của bạn">
-                                    <span class="error-message"></span>
-                                </div>
-                            </div>
-
-                            <div class="auth-form__controls">
-                                <button class="btn btn-normal mr-8px back-to-login">TRỞ LẠI</button>
-                                <button class="btn btn-primary next-check-email-notification-btn">TIẾP THEO</button>
-                            </div>
-                        </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Theo dõi chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class=" footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class=" footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-instagram"></i>
+                                    Intargram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class=" footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <!-- check email notification form -->
-                    <div class="auth-form check-email-notification-form hidden">
-                        <div class="auth-form__container">
-                            <div class="auth-form__header">
-                                <h3 class="auth-form__heading">Kiểm tra email</h3>
-                            </div>
-
-                            <div class="auth-form__form">
-                                <p class="auth-form__notification-text">Chúng tôi đã gửi một email đến địa chỉ của bạn.
-                                    Vui
-                                    lòng
-                                    kiểm tra email và làm theo hướng dẫn để đặt lại mật khẩu.</p>
-                            </div>
-
-                            <div class="auth-form__controls">
-                                <button class="btn btn-primary back-to-login-form">ĐĂNG NHẬP</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- check Password form -->
-                    <div class="auth-form hidden" id="passwordConfirmForm">
-                        <div class="auth-form__container">
-                            <div class="auth-form__header">
-                                <h3 class="auth-form__heading">Xác nhận mật khẩu</h3>
-                            </div>
-
-                            <div class="auth-form__form">
-                                <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" id="passwordConfirmInput"
-                                        placeholder="Nhập mật khẩu">
-                                    <span class="error-message"></span>
-                                </div>
-                            </div>
-
-                            <div class="auth-form__controls">
-                                <button class="btn btn-normal return-main-btn" id="closeModalBtn">TRỞ LẠI</button>
-                                <button class="btn btn-primary" id="confirmPasswordBtn">TIẾP TỤC</button>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer-heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/anh-tai-app/anhQR.png" alt="" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/anh-tai-app/google-play.png" alt=""
+                                        class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/anh-tai-app/anh-app-store.png" alt=""
+                                        class="footer__download-app-img">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <script type="module" src="js/user-page/authentication.js"></script>
-            <script type="module" src="js/user-page/confirm-password.js"></script>
-            <script type="module" src="js/user-page/change-password.js"></script>
-            <script type="module" src="js/user-page/change-email.js"></script>
-            <script type="module" src="js/user-page/change-phone-number.js"></script>
-            <script type="module" src="js/user-page/open-user-profile.js"></script>
-            <script type="module" src="js/user-page/order-filter.js"></script>
-            <script type="module" src="js/user-page/open-order.js"></script>
-            <script type="module" src="js/user-page/navbar-user-menu.js"></script>
+
+        </footer>
+
+        <div class="modal hidden">
+            <!-- lop phu ben ngoai -->
+            <div class="modal__overlay"></div>
+
+            <div class="modal__body">
+
+                <!-- register form -->
+                <div class="auth-form register-form hidden">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <div class="auth-form__switch-btn">Đăng nhập</div>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" id="register-user-name" class="auth-form__input"
+                                    placeholder="Tên của bạn">
+                                <span class="error-message"></span>
+                                <input type="email" id="register-user-email" class="auth-form__input"
+                                    placeholder="Email của bạn">
+                                <span class="error-message"></span>
+                                <input type="password" id="register-user-password" class="auth-form__input"
+                                    placeholder="Mật khẩu của bạn">
+                                <span class="error-message"></span>
+                                <input type="password" id="register-user-confirm-password" class="auth-form__input"
+                                    placeholder="Nhập lại mật khẩu">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="auth-form-aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                                <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a>
+                                và
+                                <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-normal mr-8px return-main-btn">TRỞ LẠI</button>
+                            <button class="btn btn-primary register-btn">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__social-facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__social-title">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="auth-form__social-google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                            <span class="auth-form__social-title">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- login form -->
+                <div class="auth-form login-form hidden">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <div class="auth-form__switch-btn">Đăng ký</div>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" id="login-user-email" class="auth-form__input"
+                                    placeholder="Email của bạn">
+                                <span class="error-message"></span>
+                                <input type="password" id="login-user-password" class="auth-form__input"
+                                    placeholder="Mật khẩu của bạn">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="auth-form-aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__forgot">Quên mật khẩu</a>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-normal mr-8px return-main-btn">TRỞ LẠI</button>
+                            <button class="btn btn-primary login-btn">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__social-facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__social-title">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="auth-form__social-google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                            <span class="auth-form__social-title">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- forgot password form -->
+                <div class="auth-form forgot-password-form hidden">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đặt lại mật khẩu</h3>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" id="forgot-user-email" class="auth-form__input"
+                                    placeholder="Email của bạn">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-normal mr-8px back-to-login">TRỞ LẠI</button>
+                            <button class="btn btn-primary next-check-email-notification-btn">TIẾP THEO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- check email notification form -->
+                <div class="auth-form check-email-notification-form hidden">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Kiểm tra email</h3>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <p class="auth-form__notification-text">Chúng tôi đã gửi một email đến địa chỉ của bạn.
+                                Vui
+                                lòng
+                                kiểm tra email và làm theo hướng dẫn để đặt lại mật khẩu.</p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-primary back-to-login-form">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- check Password form -->
+                <div class="auth-form hidden" id="passwordConfirmForm">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Xác nhận mật khẩu</h3>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" id="passwordConfirmInput"
+                                    placeholder="Nhập mật khẩu">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-normal return-main-btn" id="closeModalBtn">TRỞ LẠI</button>
+                            <button class="btn btn-primary" id="confirmPasswordBtn">TIẾP TỤC</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="module" src="js/user-page/authentication.js"></script>
+        <script type="module" src="js/user-page/confirm-password.js"></script>
+        <script type="module" src="js/user-page/change-password.js"></script>
+        <script type="module" src="js/user-page/change-email.js"></script>
+        <script type="module" src="js/user-page/change-phone-number.js"></script>
+        <script type="module" src="js/user-page/open-user-profile.js"></script>
+        <script type="module" src="js/user-page/order-filter.js"></script>
+        <script type="module" src="js/user-page/open-order.js"></script>
+        <script type="module" src="js/user-page/navbar-user-menu.js"></script>
 </body>
 
 </html>
