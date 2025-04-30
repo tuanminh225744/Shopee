@@ -4,10 +4,11 @@ const profileHeaderText = document.querySelector('.profile-header p');
 const formContainer = document.querySelector('.form-container');
 
 function openUserProfile() {
-    document.querySelector('.profile-content').classList.remove('hidden');
+    document.querySelector('.product-section').classList.add('hidden');
+    document.querySelector('.cart').classList.add('hidden');
+    document.querySelector('.user-section').classList.remove('hidden');
     document.querySelector('.order-page-container').classList.add('hidden');
-    document.querySelector('.category').classList.add('hidden');
-    document.querySelector('.product').classList.add('hidden');
+    document.querySelector('.profile-content').classList.remove('hidden');
     document.querySelector('.sidebar').classList.remove('hidden');
 
     // Set active class for sidebar

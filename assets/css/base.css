@@ -42,6 +42,12 @@ html{
     margin-right: -5px;
 }
 
+.grid__column{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
 .grid__column-2{         
     padding-left: 5px;
     padding-right: 5px;
